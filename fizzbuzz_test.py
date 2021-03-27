@@ -29,3 +29,7 @@ class fizzbuzz_test(unittest.TestCase):
         number = FizzBuzz(7)
         results = "7"
         self.assertEqual(number, results, "Sad FizzBuzz")
+
+    def test_returns_error_if_is_not_int(self):
+        with self.assertRaises(ValueError):
+            FizzBuzz("Not int")
