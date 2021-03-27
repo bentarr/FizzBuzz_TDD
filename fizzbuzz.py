@@ -1,4 +1,8 @@
 def FizzBuzz(number):
+    # Si un nombre n'est pas rentré mais un texte, retourne une erreur
+    if number != int: 
+        raise ValueError
+
     # Nombre égal ou inférieur à 0, retourne une erreur
     if number <= 0:
         raise ValueError
