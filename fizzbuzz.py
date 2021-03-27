@@ -3,4 +3,6 @@ def FizzBuzz(nombre):
     if nombre <= 0:
         raise ValueError
 
-    # 
+    # Nombre multiple de 3 , retourne Fizz
+    if nombre % 3 ==0:
+        return "fizz"
