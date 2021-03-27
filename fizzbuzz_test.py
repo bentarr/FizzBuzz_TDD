@@ -11,12 +11,12 @@ class fizzbuzz_test(unittest.TestCase):
             FizzBuzz(-2)
 
     def test_returns_Fizz_with_multiple_of_3(self):
-        number = FizzBuzz(9)
+        number = FizzBuzz(3)
         results = "Fizz"       
         self.assertEqual(number, results, "Nice Fizz")
     
     def test_returns_Buzz_with_multiple_of_5(self):
-        number = FizzBuzz(20)
+        number = FizzBuzz(50)
         results = "Buzz"
         self.assertEqual(number, results,  "Nice Buzz")
     
