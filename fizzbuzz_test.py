@@ -33,3 +33,7 @@ class fizzbuzz_test(unittest.TestCase):
     def test_returns_error_if_is_not_int(self):
         with self.assertRaises(ValueError):
             FizzBuzz("Not int")
+
+
+if __name__ == '__main__':
+    unittest.main()
