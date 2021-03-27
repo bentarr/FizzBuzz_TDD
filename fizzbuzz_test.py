@@ -11,16 +11,21 @@ class fizzbuzz_test(unittest.TestCase):
             FizzBuzz(-2)
 
     def test_returns_Fizz_with_multiple_of_3(self):
-        results = FizzBuzz(9)
-        number = "Fizz"       
-        self.assertEqual(results, number, "Nice Fizz")
+        number = FizzBuzz(9)
+        results = "Fizz"       
+        self.assertEqual(number, results, "Nice Fizz")
     
     def test_returns_Buzz_with_multiple_of_5(self):
-        results = FizzBuzz(20)
-        number = "Buzz"
-        self.assertEqual(results, number,  "Nice Buzz")
+        number = FizzBuzz(20)
+        results = "Buzz"
+        self.assertEqual(number, results,  "Nice Buzz")
     
     def test_returns_FizzBuzz_with_multiple_of_3_and_5(self):
-        results = FizzBuzz(30)
-        number = "FizzBuzz"
-        self.assertEqual(results, number,  "Nice FizzBuzz")
+        number = FizzBuzz(30)
+        results = "FizzBuzz"
+        self.assertEqual(number, results,  "Nice FizzBuzz")
+
+    def test_returns_alice_number_if_neither_Fizz_Buzz_FizzBuzz(self):
+        number = FizzBuzz(7)
+        results = "7"
+        self.assertEqual(number, results, "Sad FizzBuzz")
