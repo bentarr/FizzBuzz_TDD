@@ -14,3 +14,6 @@ def FizzBuzz(number):
     # Nombre multiple de 5, retourne Buzz
     if number % 5 == 0:
         return "Buzz"
+
+    # Aucune des conditions remplies , retourne le nombre de Alice
+    return str(number)
