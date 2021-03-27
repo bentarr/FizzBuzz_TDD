@@ -19,3 +19,8 @@ class fizzbuzz_test(unittest.TestCase):
         number = FizzBuzz(20)
         returns = "Buzz"
         self.assertEqual(number, returns, "ED")
+
+    def test_returns_fizzbuzz_with_multiple_of_3_and_5(self):
+        number = FizzBuzz(30)
+        returns = "FizzBuzz"
+        self.assertEqual(number, returns, "AD")
