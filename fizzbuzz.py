@@ -21,3 +21,8 @@ def FizzBuzz(number):
 
     # Aucune des conditions remplies , retourne le nombre de Alice
     return str(number)
+
+# Alice donne un chiffre à Bob
+def AliceNumber():
+    number = int(input("Give us a number Alice : "))
+    print(FizzBuzz(number))
