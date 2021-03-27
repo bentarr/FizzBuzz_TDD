@@ -8,19 +8,19 @@ class fizzbuzz_test(unittest.TestCase):
 
     def test_returns_error_with_negative_number(self):
         with self.assertRaises(ValueError):
-            FizzBuzz(-15)
+            FizzBuzz(-2)
+
+    def test_returns_Fizz_with_multiple_of_3(self):
+        results = FizzBuzz(9)
+        number = "Fizz"       
+        self.assertEqual(results, number, "Nice Fizz")
     
-    def test_returns_fizz_with_multiple_of_3(self):
-        number = FizzBuzz(15)
-        returns = "Fizz"
-        self.assertEqual(number, returns, "d")
-
-    def test_returns_buzz_with_multiple_of_5(self):
-        number = FizzBuzz(20)
-        returns = "Buzz"
-        self.assertEqual(number, returns, "ED")
-
-    def test_returns_fizzbuzz_with_multiple_of_3_and_5(self):
-        number = FizzBuzz(30)
-        returns = "FizzBuzz"
-        self.assertEqual(number, returns, "AD")
+    def test_returns_Buzz_with_multiple_of_5(self):
+        results = FizzBuzz(20)
+        number = "Buzz"
+        self.assertEqual(results, number,  "Nice Buzz")
+    
+    def test_returns_FizzBuzz_with_multiple_of_3_and_5(self):
+        results = FizzBuzz(30)
+        number = "FizzBuzz"
+        self.assertEqual(results, number,  "Nice FizzBuzz")
