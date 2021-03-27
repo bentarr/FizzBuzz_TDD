@@ -10,3 +10,7 @@ def FizzBuzz(nombre):
     # Nombre multiple de 5, retourne Buzz
     if nombre % 5 == 0:
         return "Buzz"
+
+    # Nombre multiple de 3 et 5, retourne FizzBuzz
+    if nombre % 3 == 0 and nombre % 5 == 0:
+        return "FizzBuzz"
