@@ -24,5 +24,8 @@ def FizzBuzz(number):
 
 # Alice donne un chiffre à Bob
 def AliceNumber():
-    number = int(input("Give us a number Alice : "))
+    number = int(input("Alice, give Bob a number please : "))
     print(FizzBuzz(number))
+    print()
+    print("Thank's Alice")
+    print()
